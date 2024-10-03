@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react'
-import { message0 } from '../HW1'
+import {message0} from '../HW1'
 import s from './MessageSender.module.css'
 
 
@@ -43,7 +43,7 @@ const MessageSender = (props: any) => {
     return (
         <>
             {messages.map((m) => (
-                <M key={'message' + m.id} message={m} />
+                <M key={'message' + m.id} message={m}/>
             ))}
 
             <div id={'hw1-send-message-form'} className={s.sendForm}>

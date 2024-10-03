@@ -13,7 +13,6 @@ import avatar from './avatar.png'
 * 5 - сделать стили в соответствии с дизайном
 * */
 
-// https://www.figma.com/design/9L5iRbECtW4vAnlUklpgcp/Home-Task-%231?node-id=6-37&node-type=frame&t=ubB2c6kGrbD1s3QB-0
 
 
 // нужно создать правильный тип вместо any
@@ -68,7 +67,6 @@ const HW1 = () => {
                     <Message message={message0}/>
 
                     <FriendMessage message={friendMessage0}/>
-
 
 
                 </div>

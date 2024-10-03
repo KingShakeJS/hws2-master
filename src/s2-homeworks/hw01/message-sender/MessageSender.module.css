@@ -1,16 +1,31 @@
 .sendForm {
-
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .textarea {
-    /*resize: unset;*/
+
+    resize: unset;
     width: 976px;
-    height: 40px;
+    /*height: 40px;*/
     border-radius: 20px;
     background-color: #F5F7FB;
+    padding: 10px 20px 10px 20px;
+    font-weight: 400;
+    border: unset;
+    box-shadow: 0 1px rgba(29, 33, 38, 0.1);
+
 }
 
 .button {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #0066CC;
+    font-weight: 600;
+    color: #FFFFFF;
+    border: unset;
 
 }
 

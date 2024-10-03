@@ -8,8 +8,7 @@
 .friendImageAndText {
     grid-column: 1/2;
     grid-row: 1/3;
-    color: #000000;
-;
+    color: #000000;;
     display: grid;
     grid-template-columns:  1fr 25fr;
     /* костыль */
