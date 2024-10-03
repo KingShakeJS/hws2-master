@@ -3,7 +3,11 @@
 }
 
 .textarea {
-
+    /*resize: unset;*/
+    width: 976px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #F5F7FB;
 }
 
 .button {
@@ -13,6 +17,7 @@
 .button:hover {
 
 }
+
 .button:active {
 
 }

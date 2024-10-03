@@ -6,37 +6,53 @@ import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
 /*
-* 1 - описать тип MessageType
-* 2 - описать тип MessagePropsType в файле Message.tsx
-* 3 - в файле Message.tsx отобразить приходящие данные
-* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
+* 1 - описать тип MessageType+++
+* 2 - описать тип MessagePropsType в файле Message.tsx+++
+* 3 - в файле Message.tsx отобразить приходящие данные+++
+* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx+++
 * 5 - сделать стили в соответствии с дизайном
 * */
 
-// нужно создать правильный тип вместо any
-export type MessageType = any
+// https://www.figma.com/design/9L5iRbECtW4vAnlUklpgcp/Home-Task-%231?node-id=6-37&node-type=frame&t=ubB2c6kGrbD1s3QB-0
 
+
+// нужно создать правильный тип вместо any
+export type MessageType = {
+    id: number
+    user: userType
+    message: msgType
+}
+
+export type userType = {
+    avatar: string
+    name: string
+}
+export type msgType = {
+    text: string
+    time: string
+}
 // структуру объекта не менять
 export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Ivan',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello, she didn’t do anything and rested all day, how are you?', // можно менять
+        time: '09:01', // можно менять
     },
 }
+
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Ivan', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello, how are you, what did you do yesterday?', // можно менять
+        time: '09:00', // можно менять
     },
 }
 
@@ -47,12 +63,18 @@ const HW1 = () => {
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
                 <div>
-                    <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
+
+
+                    <Message message={message0}/>
+
+                    <FriendMessage message={friendMessage0}/>
+
+
+
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
+                <MessageSender M={Message}/>
             </div>
         </div>
     )
