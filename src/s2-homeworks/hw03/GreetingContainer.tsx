@@ -73,6 +73,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
             totalUsers={totalUsers}
             lastUserName={lastUserName}
         />
+
     )
 }
 
