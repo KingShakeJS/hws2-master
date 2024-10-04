@@ -47,7 +47,6 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
         affairs = affairs.filter(a => a.priority === 'middle')
     }
 
-    console.log(affairs)
 
     return affairs // need to fix
 }
