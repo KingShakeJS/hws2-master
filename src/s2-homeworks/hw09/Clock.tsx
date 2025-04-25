@@ -41,8 +41,8 @@ function Clock() {
     }
     const getStringDate = () => {
         return (
-            `${date.getDay()}:${
-                date.getMonth() < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1)}:${
+            `${date.getDate()}.${
+                date.getMonth() < 10 ? "0" + (date.getMonth() + 1) : (date.getMonth() + 1)}.${
                 date.getFullYear()}`
         )
     }
@@ -61,7 +61,6 @@ function Clock() {
 
     return (
         <div className={s.clock}>
-
             <div
                 id={'hw9-watch'}
                 className={s.watch}
@@ -78,7 +77,7 @@ function Clock() {
                 <div className={s.more}>
                     {show ? (
                         <>
-                            <span id={'hw9-month'}> {stringMonth}</span>,{' '}
+                            <span id={'hw9-month'}>{stringMonth}</span>,{' '}
                             <span id={'hw9-date'}>{stringDate}</span>
                         </>
                     ) : (
